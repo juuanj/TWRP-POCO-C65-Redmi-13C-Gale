@@ -40,6 +40,8 @@ deploy:
 branches:
   only:
     - android-13.0
+    - main
+
 
 env:
   global:
