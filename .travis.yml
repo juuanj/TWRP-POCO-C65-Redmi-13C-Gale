@@ -19,12 +19,12 @@ before_install:
 before_script:
   - cd $HOME && mkdir twrp
   - git clone -b android-13.0 https://github.com/TeamWin/android_device_twrp.git twrp
-  - cd $HOME/twrp/ && git clone https://github.com/$$USERNAME$$/$$REPO_URL$$.git device/$$BRAND$$/$$DEVICE$$
+  - cd $HOME/twrp/ && git clone https://github.com/juuanj/TWRP-POCO-C65-Redmi-13C-Gale.git device/xiaomi/gale
 
 script:
   - cd $HOME/twrp
   - source build/envsetup.sh
-  - lunch omni_$$DEVICE$$-eng
+  - lunch omni_gale-eng
   - mka recoveryimage
 
 deploy:
@@ -35,7 +35,7 @@ deploy:
   file: $HOME/twrp/*.img
   on:
     tags: false
-    repo: $$USERNAME$$/$$REPO_URL$$
+    repo: juuanj/TWRP-POCO-C65-Redmi-13C-Gale
     branch: main
 
 branches:
