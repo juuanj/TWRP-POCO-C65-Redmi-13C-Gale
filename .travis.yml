@@ -19,6 +19,7 @@ before_install:
 before_script:
   - cd $HOME && mkdir twrp
   - git clone -b android-13.0 https://github.com/TeamWin/android_device_twrp.git twrp
+  - cd $HOME/twrp/ && git clone https://github.com/$$USERNAME$$/$$REPO_URL$$.git device/$$BRAND$$/$$DEVICE$$
 
 script:
   - cd $HOME/twrp
@@ -35,13 +36,12 @@ deploy:
   on:
     tags: false
     repo: $$USERNAME$$/$$REPO_URL$$
-    branch: android-13.0
+    branch: main
 
 branches:
   only:
     - android-13.0
     - main
-
 
 env:
   global:
