@@ -1,0 +1,1 @@
+# TWRP-POCO-C65-Redmi-13C-Gale
