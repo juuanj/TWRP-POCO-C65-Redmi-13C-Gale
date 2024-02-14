@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Android device tree for alps gale (gale)
 
 ```
@@ -8,3 +9,6 @@
 # SPDX-License-Identifier: Apache-2.0
 #
 ```
+=======
+# TWRP-POCO-C65-Redmi-13C-Gale
+>>>>>>> origin/main
